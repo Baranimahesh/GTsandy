@@ -28,6 +28,12 @@ public class Sample4 {
 			System.out.println(attribute);
 			
 		}
+		Select s=new Select(dropYear);
+		List<WebElement> drop = s.getOptions();
+		for (WebElement Element : drop) {
+			String attribute = Element.getAttribute("value");
+			System.out.println(attribute);
+			
 			
 		}
 		
